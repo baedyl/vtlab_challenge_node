@@ -9,6 +9,13 @@ export default {
     "page": Joi.number().optional(),
     "limit": Joi.number().optional(),
   }),
+  'filterGet': Joi.object({
+    "dateFrom": Joi.string().isoDate(),
+    "dateTo": Joi.string().isoDate(),
+    "weight": Joi.number(),
+    "page": Joi.number().optional(),
+    "limit": Joi.number().optional(),
+  }),
   'mainPost': Joi.object({
     "when": Joi.string().isoDate().required(),
     "origin": Joi.object({
