@@ -4,7 +4,8 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node ./bin/start"
+    "start": "node ./bin/start",
+    "dev": "nodemon ./bin/start"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
@@ -32,6 +33,7 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-mocha": "^4.11.0",
-    "eslint-plugin-react": "^7.2.1"
+    "eslint-plugin-react": "^7.2.1",
+    "nodemon": "^2.0.13"
   }
 }
